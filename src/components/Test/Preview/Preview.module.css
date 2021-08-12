@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 450px;
+    padding: 50px 0;
+}
+
+.block > h1 {
+    margin-bottom: 30px;
+}
