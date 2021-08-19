@@ -38,8 +38,8 @@ export function CVmy() {
 
     return (
         <div className={styles.wrapper}>
-            <SlideInLeft>
-                <div className={styles.bottom} onMouseEnter={() => play()} onMouseLeave={() => stop()}>
+            <SlideInLeft className={styles.bottom}>
+                <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
                     🔊
                     {/*<Sound/>*/}
                 </div>
@@ -52,7 +52,7 @@ export function CVmy() {
                             <Tada> FRONTEND DEVELOPER</Tada>
                         </div>
                         <div className={styles.foto}><Pulse>
-                            <img className={styles.img} src="myfoto.jpg" alt="myPhoto"/>
+                            <img className={styles.img} src="./myfoto.jpg" alt="myPhoto"/>
                         </Pulse>
                         </div>
                     </div>
@@ -150,7 +150,7 @@ export function CVmy() {
                         <ZoomIn>
                             <div className={styles.category}>
                                 <ZoomInDown>
-                                    <h2>TECHNICAL SKILLS</h2>
+                                    <h2>LANGUAGES</h2>
                                     <hr/>
                                     <br/>
                                     <ZoomInC>
@@ -220,8 +220,8 @@ export function CVmy() {
                     </div>
                 </SlideInUp>
             </div>
-            <SlideInRight>
-                <div className={styles.bottom} onMouseEnter={() => play()} onMouseLeave={() => stop()}>
+            <SlideInRight className={styles.bottom}>
+                <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
                     🔊
                     {/*<Sound/>*/}
                 </div>

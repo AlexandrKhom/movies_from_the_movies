@@ -5,27 +5,25 @@
 }
 
 .wrapper {
-    display: grid;
-    grid-template-columns: 1.8fr 6.4fr 1.8fr;
-    background: rgba(197, 238, 230, 0.97);
+    width: 100%;
+    min-width: 730px;
+    min-height: 100vh;
+    /*display: grid;*/
+    display: flex;
+    /*grid-template-columns: 1.8fr 6.4fr 1.8fr;*/
+    background: #2e2c33;
     text-align: center;
-
 }
 
 .main {
-    /*background: rgba(206, 227, 224, 0.97);*/
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-
-
+    /*width: 40%;*/
+    /*height: 100vh;*/
 }
 
 .bottom {
     background: #2e2c33;
-    height: 100vh;
-    width: 1.8fr;
+    min-height: 100vh;
+    width: 25%;
     display: grid;
     align-content: center;
     justify-content: center;
@@ -33,10 +31,10 @@
 }
 
 .header {
-    /*background: cornflowerblue;*/
+    padding: 10px;
     background: #285a8f;
-    height: 25vh;
-    width: 1fr;
+    min-height: 25vh;
+    /*width: 1fr;*/
     display: grid;
     grid-template-columns: 6fr 4fr;
 }
@@ -56,7 +54,7 @@
     padding-right: 40px;
     /*text-shadow: 5px 6px 2px rgba(0,0,0,0.3);*/
     text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-    0px -5px 35px rgba(255,255,255,0.3);
+    0 -5px 35px rgba(255,255,255,0.3);
 }
 
 .foto {
@@ -74,9 +72,9 @@
 }
 
 .menu {
-    background: rgba(198, 234, 230, 0.97);
+    background: rgba(0, 255, 255, 0.97);
     display: grid;
-    height: 75vh;
+    /*min-height: 75vh;*/
     grid-template-columns: 1fr 1fr;
     /*grid-template-rows: 28.3vh 28.3vh 28.3vh;*/
     grid-template-rows: repeat(3, 1fr);
@@ -86,10 +84,13 @@
 }
 
 .category {
+    margin-top: 2px;
+    padding: 20px;
     display: grid;
     /*background: dodgerblue;*/
     background: cornflowerblue;
-    height: 24.5vh;
+    min-height: 226px;
+    min-width: 430px;
 }
 
 .category2 {

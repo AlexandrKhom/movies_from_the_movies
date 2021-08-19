@@ -8,7 +8,7 @@ export const UserInfo = () => {
 
   return (
       <div className={styles.wrapper}>
-        <Link to="/myCV" className={`${styles.logo} ${theme ? styles.dark : styles.white}`}><b><i>Alexandr</i></b></Link>
+        <Link to="/myCV" className={`${styles.logo} ${theme ? styles.dark : styles.white}`}><b><i>AlexandrKhom</i></b></Link>
           <Link to="/myCV" className={styles.img}>
           {
             theme
