@@ -8,8 +8,8 @@ export const ContactCV = () => {
         <BlockTitle title={'CONTACTS'}/>
         <div className={styles.wrapper}>
           <div>
-            <b>E-mail : </b>
-            <a target="_blank" href='mailto:alex988andr@gmail.com'>alex988andr@gmail.com</a>
+            <b>E-mail : alex988andr@gmail.com</b>
+            <a target="_blank" href='mailto:alex988andr@gmail.com' rel="noreferrer">alex988andr@gmail.com</a>
           </div>
           <div>
             <b>Phone : </b>
@@ -17,11 +17,11 @@ export const ContactCV = () => {
           </div>
           <div>
             <b>Telegram : </b>
-            <a target="_blank" href='https://t.me/Ander988'>@Ander988</a>
+            <a target="_blank" href='https://t.me/Ander988' rel="noreferrer">@Ander988</a>
           </div>
           <div>
             <b>GitHub : </b>
-            <a target="_blank" href='https://github.com/AlexandrKhom'>https://github.com/AlexandrKhom</a>
+            <a target="_blank" href='https://github.com/AlexandrKhom' rel="noreferrer">https://github.com/AlexandrKhom</a>
           </div>
           <div>
             <b>Skype : </b>

@@ -57,7 +57,7 @@ export const SearchPanel = () => {
         </form>
 
         {
-          searchValue && <DropDown searchItems={searchItems} loading={loading} setSearchValue={setSearchValue}/>
+          dropDownIsVisible && searchValue && <DropDown searchItems={searchItems} loading={loading} setSearchValue={setSearchValue}/>
         }
       </div>
   );

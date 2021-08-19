@@ -6,6 +6,20 @@
     font-size: 20px;
 }
 
+.logo {
+    text-decoration: none;
+font-size: 25px;
+}
+
+.logo.dark > b:hover {
+    color: #57a8e8;
+    text-decoration: underline;
+}
+.logo.white > b:hover {
+    color: #3a3737;
+    text-decoration: underline;
+}
+
 .img {
     width: 40px;
 }

@@ -5,22 +5,24 @@ import {
 } from "@material-ui/core";
 import {useEffect, useState} from "react";
 
+const initialState = {
+    answer1: '',
+    answer2: '',
+    checkbox1: false,
+    checkbox2: false,
+    checkbox3: false,
+    checkbox4: false,
+    checkbox5: false,
+    checkbox6: false,
+    checkbox7: false,
+    checkbox8: false,
+    input1: '',
+    input2: '',
+}
+
 export const Questions = ({setSuccess, success}) => {
     const [valid, setValid] = useState(false);
-    const [formState, setFormState] = useState({
-        answer1: '',
-        answer2: '',
-        checkbox1: false,
-        checkbox2: false,
-        checkbox3: false,
-        checkbox4: false,
-        checkbox5: false,
-        checkbox6: false,
-        checkbox7: false,
-        checkbox8: false,
-        input1: '',
-        input2: '',
-    });
+    const [formState, setFormState] = useState(initialState);
 
     const exampleAnswers = {
         answer1: '111',
@@ -47,16 +49,19 @@ export const Questions = ({setSuccess, success}) => {
         }
     }
 
-
     const handleChange = ({target: {value, name}}) => setFormState({...formState, [name]: value});
-
     const handleCheckbox = ({target: {checked, name}}) => setFormState({...formState, [name]: checked});
-
 
     useEffect(() => {
         submit();
-    }, [formState, submit, valid]);
+    }, [formState, submit]);
 
+    useEffect(() => {
+        return () => {
+            setFormState(initialState)
+            setValid(false)
+        }
+    }, []);
 
     return (
         <div className={`${styles.wrapper} ${styles.notForCopy} ${success ? styles.green : styles.red}`}>
@@ -235,7 +240,7 @@ export const Questions = ({setSuccess, success}) => {
                 </FormControl>
             </div>
             <div className={styles.linkToGitHub}>
-                {success && <a target='_blank' href="https://github.com/AlexandrKhom/movies_from_the_movies"><i>Show source code my project</i></a>}
+                {success && <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies"><i>Show source code my project</i></a>}
             </div>
         </div>
     );

@@ -21,15 +21,15 @@ export const ZoomInC = styled.div`animation: 3s backwards 2s ${keyframes`${zoomI
 export const SlideInRight = styled.div`animation: 1s ${keyframes`${slideInRight}`}`;
 
 
-export const Sound = () => {
-    const [play] = useSound(boom);
-
-    return (
-        <button style={{background: '#2e2c33'}} onClick={play}>
-            🔊
-        </button>
-    );
-};
+// export const Sound = () => {
+//     const [play] = useSound(boom);
+//
+//     return (
+//         <button style={{background: '#2e2c33'}} onClick={play}>
+//             🔊
+//         </button>
+//     );
+// };
 
 
 export function CVmy() {
@@ -40,7 +40,8 @@ export function CVmy() {
         <div className={styles.wrapper}>
             <SlideInLeft>
                 <div className={styles.bottom} onMouseEnter={() => play()} onMouseLeave={() => stop()}>
-                    <Sound/>
+                    🔊
+                    {/*<Sound/>*/}
                 </div>
             </SlideInLeft>
             <div className={styles.main}>
@@ -76,14 +77,21 @@ export function CVmy() {
                                             <div className={styles.value}>
                                                 <div><a className={styles.refer}
                                                         target="_blank"
-                                                        href='mailto:alex988andr@gmail.com'>alex988andr@gmail.com</a>
+                                                        href='mailto:alex988andr@gmail.com'
+                                                        rel="noreferrer">
+                                                    alex988andr@gmail.com</a>
                                                 </div>
                                                 <div>+38 (073) 020 12 85</div>
                                                 <div><a className={styles.refer} target="_blank"
-                                                        href='https://t.me/Ander988'>@Ander988</a></div>
+                                                        href='https://t.me/Ander988'
+                                                        rel="noreferrer">
+                                                    @Ander988</a>
+                                                </div>
                                                 <div>alex7work</div>
                                                 <div><a className={styles.refer} target="_blank"
-                                                        href='https://github.com/AlexandrKhom'>https://github.com/AlexandrKhom</a>
+                                                        href='https://github.com/AlexandrKhom'
+                                                        rel="noreferrer">
+                                                    https://github.com/AlexandrKhom</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -192,12 +200,16 @@ export function CVmy() {
                                     <ZoomInC>
                                         <div>
                                             <a className={styles.refer}
-                                               target="_blank" href="https://alexandrkhom.github.io">
+                                               target="_blank"
+                                               href="https://alexandrkhom.github.io"
+                                               rel="noreferrer">
                                                 https://alexandrkhom.github.io/movie</a>
                                             <br/>
                                             <br/>
                                             <a className={styles.refer}
-                                               target="_blank" href="https://alexkyiv1990.github.io">
+                                               target="_blank"
+                                               href="https://alexkyiv1990.github.io"
+                                               rel="noreferrer">
                                                 https://alexandrkhom.github.io/calculator</a>
                                             <br/>
                                         </div>
@@ -210,7 +222,8 @@ export function CVmy() {
             </div>
             <SlideInRight>
                 <div className={styles.bottom} onMouseEnter={() => play()} onMouseLeave={() => stop()}>
-                    <Sound/>
+                    🔊
+                    {/*<Sound/>*/}
                 </div>
             </SlideInRight>
         </div>

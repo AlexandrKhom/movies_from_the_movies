@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 
 import styles from './TestPage.module.css';
 import { Preview, Questions, Timer } from "../../components";
@@ -6,6 +6,13 @@ import { Preview, Questions, Timer } from "../../components";
 export const TestPage = () => {
   const [start, setStart] = useState(false);
   const [success, setSuccess] = useState(false);
+
+    useEffect(() => {
+        return () => {
+            setStart(false);
+            setSuccess(false);
+        }
+    }, [])
 
   return (
       <div className={`${styles.wrapper} ${success ? styles.green : styles.red}`}>
