@@ -23,14 +23,14 @@ export const ContactCV = () => {
             <b>GitHub : </b>
             <a target="_blank" href='https://github.com/AlexandrKhom'>https://github.com/AlexandrKhom</a>
           </div>
-          {/*<div>*/}
-          {/*  <b>Linkedin : </b>*/}
-          {/*  <a target="_blank" href='https://www.linkedin.com/in/maksym-fedenko-22a5781b9'>https://www.linkedin.com/in/maksym-fedenko-22a5781b9</a>*/}
-          {/*</div>*/}
           <div>
             <b>Skype : </b>
             <span>alex7work</span>
           </div>
+          {/*<div>*/}
+          {/*  <b>Linkedin : </b>*/}
+          {/*  <a target="_blank" href='https://www.linkedin.com'>https://www.linkedin.com</a>*/}
+          {/*</div>*/}
         </div>
       </div>
   );

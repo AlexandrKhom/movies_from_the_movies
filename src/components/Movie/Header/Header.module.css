@@ -4,10 +4,20 @@
 
     padding: 20px 60px;
     display: flex;
+
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill,minmax(160px, 1fr));*/
+
     justify-content: space-between;
     align-items: center;
     column-gap: 20px;
+    /*column-gap: 10px;*/
+
 }
+
+/*.header>* {*/
+/*    flex: 1 1 100px;*/
+/*}*/
 
 .logo {
     text-decoration:none;

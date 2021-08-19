@@ -29,15 +29,21 @@ export const Hide = () => {
             <br/>
             <h3>Added features:</h3>
             <ul>
-              <li  className={styles.info}>select multiple genres</li>
+              <li  className={styles.info}>smart search</li>
               <li  className={styles.info}>сhange the theme</li>
-              <li  className={styles.info}>video player in the movie card</li>
+              <li  className={styles.info}>select multiple genres</li>
+              <li  className={styles.info}>video in the movies card</li>
               <li  className={styles.info}>my CV by clicking on the logo</li>
             </ul>
+            <br/>
+            <hr/>
+            <br/>
             <h3>About the project:</h3>
+            <br/>
             <div  className={styles.info}>
               ❗ If you want to see the code of the project, use the Test at the bottom of the page)  ❗
             </div>
+            <br/>
 
             <div className={styles.btnWrapper}>
               <button className={styles.close} onClick={clickFu}>close info</button>

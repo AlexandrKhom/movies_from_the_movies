@@ -17,6 +17,7 @@ export const Header = () => {
         <GenresSelect/>
         <ToggleThem/>
         <UserInfo/>
+
       </div>
   );
 }

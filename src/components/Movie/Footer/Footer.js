@@ -8,7 +8,7 @@ export const Footer = () => {
 
     return (
         <div className={`${styles.footer} ${theme ? styles.dark : styles.white}`}>
-          <Link to="/test">TEST</Link>
+          <Link className={styles.test} to="/test">❗ TEST ❗</Link>
         </div>
     );
 }
