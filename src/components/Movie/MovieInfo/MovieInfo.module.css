@@ -31,10 +31,10 @@ iframe {
 }
 .voteTitle {
     font-size: 11px;
-    margin: 16px 0 -7px;
+    margin: 19px 0 4px;
 }
 .voteCount {
-    margin: -8px 0;
+    margin: 0;
 }
 
 .white {

@@ -48,7 +48,7 @@ export const SearchPanel = () => {
   };
 
   return (
-      <div onMouseLeave={() => setDropDownIsVisible(false)}>
+      <div className={styles.wrapper} onMouseLeave={() => setDropDownIsVisible(false)}>
         <form onSubmit={getMoviesFromDB}>
           <input onInput={typeSearchValue}
                  onClick={() => setDropDownIsVisible(true)}
@@ -57,7 +57,7 @@ export const SearchPanel = () => {
         </form>
 
         {
-          dropDownIsVisible && searchValue && <DropDown searchItems={searchItems} loading={loading} setSearchValue={setSearchValue}/>
+          searchValue && <DropDown searchItems={searchItems} loading={loading} setSearchValue={setSearchValue}/>
         }
       </div>
   );
