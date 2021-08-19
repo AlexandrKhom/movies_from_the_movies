@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1.8fr 6.4fr 1.8fr;
+    background: rgba(197, 238, 230, 0.97);
+    text-align: center;
+
+}
+
+.main {
+    /*background: rgba(206, 227, 224, 0.97);*/
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+
+}
+
+.bottom {
+    background: #2e2c33;
+    height: 100vh;
+    width: 1.8fr;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.header {
+    /*background: cornflowerblue;*/
+    background: #285a8f;
+    height: 25vh;
+    width: 1fr;
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+}
+
+.refer {
+    text-decoration: none;
+    color: #7a24b2;
+    font-size: 19px;
+}
+
+.about {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: x-large;
+    padding-right: 40px;
+    /*text-shadow: 5px 6px 2px rgba(0,0,0,0.3);*/
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.foto {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    padding-right: 40px;
+}
+
+.img {
+    width: 180px;
+    height: 180px;
+    border: black 1px solid;
+    border-radius: 100%;
+}
+
+.menu {
+    background: rgba(198, 234, 230, 0.97);
+    display: grid;
+    height: 75vh;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: 28.3vh 28.3vh 28.3vh;*/
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    grid-column-gap: 2px;
+}
+
+.category {
+    display: grid;
+    /*background: dodgerblue;*/
+    background: cornflowerblue;
+    height: 24.5vh;
+}
+
+.category2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*justify-items: start;*/
+}
+
+.name {
+    display: grid;
+    justify-items: start;
+    /*grid-template-rows: 5fr;*/
+    font-size: 17px;
+    font-weight: bolder;
+    padding-left: 15px;
+    line-height: 1.4
+
+}
+
+.value {
+    display: grid;
+    justify-items: start;
+    padding-right: 25px;
+    grid-template-rows: 5fr;
+    font-size: 17px;
+    line-height: 1.4
+}
