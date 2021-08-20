@@ -22,6 +22,7 @@ export const MoviesList = () => {
                 : <div><h2>Sorry... Film not found 🥺</h2></div>
           }
         </div>
+          {!!movies.length && <Pagination/>}
       </div>
   );
 }

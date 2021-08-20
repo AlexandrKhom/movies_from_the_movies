@@ -72,9 +72,11 @@ export const Questions = ({setSuccess, success}) => {
             <div>
                 <FormControl component="fieldset">
                     <FormLabel component="legend">
-                        <div className={styles.qsize}>1️⃣ Чему равно a + b + c?</div><br/>
+                        <div className={styles.qsize}>1️⃣ Чему равно a + b + c?</div>
+                        <br/>
                     </FormLabel>
-                    <div className={styles.qsize2}>let a = 1; <br/>
+                    <div className={styles.qsize2}>
+                        let a = 1; <br/>
                         {"let b = { toString() {return '1'} }"};<br/>
                         let c = 1;
                     </div>
@@ -104,16 +106,17 @@ export const Questions = ({setSuccess, success}) => {
                                           control={<Radio color="primary"/>}
                                           label="3"/>
                     </RadioGroup>
-<br/>
-                  <hr/>
+                    <br/>
+                    <hr/>
                     <br/>
                     <FormLabel component="legend">
-                        <div className={styles.qsize}>2️⃣ Что выведет sayHi при вызове через setTimeout?</div><br/>
+                        <div className={styles.qsize}>2️⃣ Что выведет sayHi при вызове через setTimeout?</div>
+                        <br/>
                     </FormLabel>
                     <div className={styles.qsize2}>{'let name = "Alex";'} <br/>
                         {`function sayHi() {`} <br/>
                         {`alert(name)`} <br/>
-                        {'}'}<br/>
+                        {'};'}<br/><br/>
 
                         {`setTimeout(function () {`} <br/>
                         {` let name = "Max";`} <br/>
@@ -145,13 +148,14 @@ export const Questions = ({setSuccess, success}) => {
                                           control={<Radio color="primary"/>}
                                           label="Другой ответ"/>
                     </RadioGroup>
-<br/>
+                    <br/>
                     <hr/>
                     <br/>
                     <FormLabel component="legend">
                         <div className={styles.qsize}>
                             3️⃣ Какие вызовы parseInt возвратят число? (возможны несколько вариантов)
-                        </div><br/>
+                        </div>
+                        <br/>
                     </FormLabel>
                     <br/>
                     <FormGroup>
@@ -180,13 +184,14 @@ export const Questions = ({setSuccess, success}) => {
                                                              name="checkbox4"/>}
                                           label="parseInt('$1.2')"/>
                     </FormGroup>
-<br/>
+                    <br/>
                     <hr/>
                     <br/>
                     <FormLabel component="legend">
                         <div className={styles.qsize}>4️⃣ Какой код корректно найдёт максимальное значение в непустом
                             массиве arr? (возможны несколько вариантов)
-                        </div><br/>
+                        </div>
+                        <br/>
                     </FormLabel>
                     <br/>
                     <FormGroup>
@@ -215,7 +220,7 @@ export const Questions = ({setSuccess, success}) => {
                                                              name="checkbox8"/>}
                                           label="arr.findMax()"/>
                     </FormGroup>
-<br/>
+                    <br/>
                     <hr/>
                     <br/>
                     <div className={styles.qsize}>5️⃣ Что выведет: alert((1,5-1)*2)</div>
@@ -223,7 +228,8 @@ export const Questions = ({setSuccess, success}) => {
                     <TextField onChange={handleChange} value={formState.input1} name="input1" label="Outlined"
                                variant="outlined"/>
                     <br/>
-                    <hr/><br/>
+                    <hr/>
+                    <br/>
                     <div className={styles.qsize}>6️⃣ Чему равно 2 && 1 && 0 && null && undefined && 5 ?</div>
                     <br/>
                     <TextField onChange={handleChange} value={formState.input2} name="input2" label="Outlined"
@@ -240,7 +246,9 @@ export const Questions = ({setSuccess, success}) => {
                 </FormControl>
             </div>
             <div className={styles.linkToGitHub}>
-                {success && <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies"><i>Show source code my project</i></a>}
+                {success &&
+                <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies"><i>Show
+                    source code my project</i></a>}
             </div>
         </div>
     );

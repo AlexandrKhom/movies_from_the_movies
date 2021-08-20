@@ -22,6 +22,10 @@
     border-radius: 10px;
 }
 
+.searchInput:hover {
+    border: 2px solid #1a549a;
+}
+
 .white {
     background-color: #ccced7;
 }

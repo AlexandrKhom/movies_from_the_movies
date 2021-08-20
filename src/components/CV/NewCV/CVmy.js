@@ -2,12 +2,12 @@ import React from "react";
 import styles from './CVmy.module.css'
 import useSound from 'use-sound';
 import boom from './sound/alarm01.mp3';
-// import phone from './sound/iphone.mp3';
 import styled, {keyframes} from 'styled-components';
 import {
     slideInDown, zoomIn, pulse, tada, zoomInDown,
     slideInLeft, slideInRight, slideInUp
 } from 'react-animations';
+
 
 
 export const SlideInLeft = styled.div`animation: 1s ${keyframes`${slideInLeft}`}`;
@@ -109,9 +109,9 @@ export function CVmy() {
                                         <div className={styles.category2}>
                                             <div className={styles.name}>
                                                 <div>JavaScript</div>
-                                                <div>React(Redux,thunk)</div>
+                                                <div>React</div>
                                                 <div>MySQL/MongoDB</div>
-                                                <div>Angular/TypeScript</div>
+                                                <div>Angular</div>
                                                 <div>Node.js</div>
                                                 {/*<div>GIT, Webpack, Bootstrap,</div>*/}
                                                 {/*<div>CSS3, HTML5, Figma</div>*/}
@@ -199,14 +199,14 @@ export function CVmy() {
                                     <br/>
                                     <ZoomInC>
                                         <div>
-                                            <a className={styles.refer}
+                                            <a className={styles.refer2}
                                                target="_blank"
                                                href="https://alexandrkhom.github.io"
                                                rel="noreferrer">
                                                 https://alexandrkhom.github.io/movie</a>
                                             <br/>
                                             <br/>
-                                            <a className={styles.refer}
+                                            <a className={styles.refer2}
                                                target="_blank"
                                                href="https://alexkyiv1990.github.io"
                                                rel="noreferrer">

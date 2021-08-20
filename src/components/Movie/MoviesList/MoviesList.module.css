@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 30px 60px;
+    padding: 30px 30px;
     column-gap: 20px;
     row-gap: 20px;
 }

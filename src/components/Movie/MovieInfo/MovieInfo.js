@@ -43,12 +43,12 @@ export const MovieInfo = () => {
 
           <div className={styles.wrapperVote}>
             <div className={`${styles.vote} ${theme ? styles.dark : styles.white}`}>
-              <p className={styles.voteTitle}>MovieDB:</p>
+              <p className={styles.voteTitle}>Rating:</p>
               <hr/>
               <p className={styles.voteCount}>{filmDetails.vote_average}</p>
             </div>
             <div className={`${styles.vote} ${theme ? styles.dark : styles.white}`}>
-              <p className={styles.voteTitle}>Проголосувало:</p>
+              <p className={styles.voteTitle}>Vote:</p>
               <hr/>
               <p className={styles.voteCount}>{filmDetails.vote_count}</p>
             </div>
@@ -58,18 +58,18 @@ export const MovieInfo = () => {
         <div className={styles.wrapperInfo}>
           <h1 className={styles.filmTitle}>{filmDetails.original_title}</h1>
           <p>
-            <b>Жанр : </b>
+            <b>Genre : </b>
             {filmDetails.genres.map(({ name }, i) => `${name}${i < filmDetails.genres.length - 1 ? ', ' : '.'}`)}
           </p>
-          <p><b>Бюджет : </b>{filmDetails.budget}</p>
-          <p><b>Дата релізу : </b>{filmDetails.release_date}</p>
+          <p><b>Budget : </b>{filmDetails.budget}</p>
+          <p><b>Release date : </b>{filmDetails.release_date}</p>
           <p>
-            <b>Країна : </b>
+            <b>Country : </b>
             {
               filmDetails.production_countries.map(({ name }, i) => `${name}${i < filmDetails.production_countries.length - 1 ? ', ' : '.'}`)
             }
           </p>
-          <b>Опис :</b>
+          <b>Description :</b>
           <p>{filmDetails.overview}</p>
 
           <iframe title={'video'}

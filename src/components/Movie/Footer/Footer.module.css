@@ -1,23 +1,21 @@
 .footer {
-    width: 100%;
-    height: 10vh;
     display: flex;
+    width: 100%;
+    min-width: 620px;
+    height: 10vh;
     justify-content: center;
     font-size: 35px;
     justify-items: center;
     align-items: center;
 }
 
-/*Link.footer {*/
-/*    text-decoration: none;*/
-/*}*/
-
 .test {
     text-decoration: none;
+    font-size: 25px;
 }
 .test:hover {
     cursor: pointer;
-    font-size: 130%;
+    font-size: 77%;
 }
 
 .white {
