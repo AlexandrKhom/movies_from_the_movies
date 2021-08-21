@@ -5,16 +5,26 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background-color: #fcd1d1;
 }
 
 .block {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 450px;
-    padding: 50px 0;
+    /*min-height: 50%;*/
+    /*min-width: 70%;*/
+    align-items: center;
+    /*padding: 50px 0;*/
+
+    padding: 50px 50px;
+
 }
 
-.block > h1 {
+.block > h2 {
     margin-bottom: 30px;
+    max-width: 50%;
+}
+.block > button {
+    border-radius: 15px;
 }

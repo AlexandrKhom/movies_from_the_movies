@@ -1,13 +1,13 @@
 import React from "react";
 import styles from './CVmy.module.css'
 import useSound from 'use-sound';
-import boom from './sound/alarm01.mp3';
+import phone from './sound/iphone.mp3'
 import styled, {keyframes} from 'styled-components';
 import {
     slideInDown, zoomIn, pulse, tada, zoomInDown,
     slideInLeft, slideInRight, slideInUp
 } from 'react-animations';
-
+import {Link} from "react-router-dom";
 
 
 export const SlideInLeft = styled.div`animation: 1s ${keyframes`${slideInLeft}`}`;
@@ -33,12 +33,13 @@ export const SlideInRight = styled.div`animation: 1s ${keyframes`${slideInRight}
 
 
 export function CVmy() {
-    const [play, {stop}] = useSound(boom);
+    const [play, {stop}] = useSound(phone);
 
 
     return (
         <div className={styles.wrapper}>
             <SlideInLeft className={styles.bottom}>
+                <Link to="/" className={styles.back}>B</Link>
                 <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
                     🔊
                     {/*<Sound/>*/}
@@ -201,7 +202,7 @@ export function CVmy() {
                                         <div>
                                             <a className={styles.refer2}
                                                target="_blank"
-                                               href="https://alexandrkhom.github.io"
+                                               href="https://max2020khom.github.io"
                                                rel="noreferrer">
                                                 https://alexandrkhom.github.io/movie</a>
                                             <br/>

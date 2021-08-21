@@ -1,7 +1,7 @@
 .wrapper {
     width: 80%;
     /*width: 100%;*/
-    min-width: 620px;
+    min-width: 420px;
     display: flex;
     /*flex-wrap: wrap;*/
     justify-content: center;
@@ -27,7 +27,7 @@ iframe {
 .wrapperImg {
     margin-top: 20px;
     min-width: 70px;
-    margin-left: 22px;
+    margin-left: 7%;
 }
 
 .vote {
@@ -58,7 +58,9 @@ iframe {
 
 .wrapperInfo {
     flex: 1;
-    padding: 10px 30px 30px;
+    /*padding: 10px 30px 30px;*/
+
+    margin: 5%;
     line-height: 1.6;
 }
 .filmTitle{

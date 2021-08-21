@@ -6,10 +6,10 @@ export const Preview = ({ setStart }) => {
   return (
       <div className={styles.wrapper}>
         <div className={styles.block}>
-          <h1>Чтобы увидеть
-              source code
-              моего проекта, необходимо пройти небольшое тестирование. <br/>
-              Это займёт не более 2-х минут.</h1>
+          <h2>Чтобы увидеть
+              source code моего проекта,
+              необходимо пройти небольшое тестирование. <br/>
+              Это займёт не более 2-х минут.</h2>
           <Button onClick={() => setStart(true)} variant="outlined" color="secondary">Start</Button>
         </div>
       </div>

@@ -8,3 +8,18 @@
 .red {
     background-color: #e5aaaa;
 }
+.back {
+    position: fixed;
+    text-decoration: none;
+    color: rgba(234, 125, 194, 0.7);
+    font-size: large;
+    border: rgba(234, 125, 194, 0.7) 1px solid;
+    border-radius: 22px;
+    margin: 3px;
+    padding: 1px;
+}
+.back:hover {
+    /*border: #3f3030 1px solid;*/
+    border: rgba(218, 101, 175, 0.7) 1px solid;
+    color: rgba(218, 101, 175, 0.7);
+}
