@@ -121,15 +121,15 @@
 .back {
     position: fixed;
     text-decoration: none;
-    color: rgba(58, 55, 55, 0.68);
+    color: rgba(150, 121, 121, 0.73);
     font-size: large;
-    border: #3a3737 1px solid;
+    border: rgba(150, 121, 121, 0.73) 1px solid;
     border-radius: 22px;
     margin: 3px;
     padding: 1px;
 }
 .back:hover {
     /*border: #3f3030 1px solid;*/
-    border: #2d494b 1px solid;
-    color: #2d494b;
+    border: #285a8f 1px solid;
+    color: #285a8f;
 }

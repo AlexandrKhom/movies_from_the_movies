@@ -14,7 +14,8 @@ iframe {
     min-height: 270px;
     max-height: max-content;
     border: 1px solid black;
-    margin: 20px;
+    margin-top: 20px;
+    margin-right: 7px;
 }
 
 

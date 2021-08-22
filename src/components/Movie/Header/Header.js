@@ -10,6 +10,8 @@ import {ToggleThem} from "../ToggleThem";
 export const Header = () => {
     const {theme} = useSelector(({theme}) => theme);
 
+
+
     return (
         <div className={`${styles.header} ${theme ? styles.dark : styles.white}`}>
             <Link to="/" className={`${styles.logo} ${theme ? styles.dark : styles.white}`}><b><i>MoviesDB</i></b></Link>
