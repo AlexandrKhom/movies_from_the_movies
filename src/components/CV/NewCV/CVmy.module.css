@@ -86,11 +86,11 @@
 
 .category {
     margin: 1px;
-    padding: 20px;
+    padding: 10px;
     display: grid;
     background: cornflowerblue;
-    min-height: 226px;
-    min-width: 430px;
+    min-height: 211px;
+    min-width: 411px;
     border-radius: 1%;
 }
 
@@ -104,7 +104,7 @@
     justify-items: start;
     font-size: 17px;
     font-weight: bolder;
-    padding-left: 15px;
+    padding-left: 10px;
     line-height: 1.4
 
 }
@@ -132,4 +132,18 @@
     /*border: #3f3030 1px solid;*/
     border: #285a8f 1px solid;
     color: #285a8f;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

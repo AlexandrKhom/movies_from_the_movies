@@ -20,7 +20,7 @@ export const Header = () => {
             <Link to="/" className={`${styles.logo} ${theme ? styles.dark : styles.white}`}><b><i>Home</i></b></Link>
             {/*<SearchPanel/>*/}
             {/*<GenresSelect/>*/}
-            <ToggleThem/>
+            {/*<ToggleThem/>*/}
             {/*<UserInfo/>*/}
 
             <Navbar/>

@@ -92,7 +92,7 @@ export function CVmy() {
                                                 <div><a className={styles.refer} target="_blank"
                                                         href='https://github.com/AlexandrKhom'
                                                         rel="noreferrer">
-                                                    https://github.com/AlexandrKhom</a>
+                                                    github.com/AlexandrKhom</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -142,7 +142,7 @@ export function CVmy() {
                                                 <p>OktenWeb University</p></div>
                                             <div style={{paddingRight: '15px'}}><b>Medical Psychology</b>
                                                 <p>Sep 2003 – May 2010</p>
-                                                <p>BOGOMOLETS NATIONAL MEDICAL UNIVERSITY</p></div>
+                                                <p>BOGOMOLETS NMU</p></div>
                                         </div>
                                     </ZoomIn>
                                 </ZoomInDown>
