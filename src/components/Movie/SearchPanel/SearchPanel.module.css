@@ -14,11 +14,11 @@
     flex-grow: 10;
     /*flex-grow: 1;*/
     border-radius: 10px;
-    border: 1px solid grey;
+    border: 2px solid grey;
 }
 
 .searchInput:active {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 10px;
 }
 

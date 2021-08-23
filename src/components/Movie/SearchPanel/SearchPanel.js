@@ -53,6 +53,7 @@ export const SearchPanel = () => {
           <input onInput={typeSearchValue}
                  onClick={() => setDropDownIsVisible(true)}
                  value={searchValue}
+                 placeholder={'search...'}
                  className={`${styles.searchInput} ${theme ? styles.dark : styles.white}`}/>
         </form>
 

@@ -28,7 +28,7 @@ iframe {
 .wrapperImg {
     margin-top: 20px;
     min-width: 70px;
-    margin-left: 7%;
+    /*margin-left: 7%;*/
 }
 
 .vote {
