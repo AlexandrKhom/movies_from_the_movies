@@ -31,6 +31,7 @@ export const Hide = () => {
             <ul>
               <li  className={styles.info}>smart search</li>
               <li  className={styles.info}>сhange the theme</li>
+              <li  className={styles.info}>mobile adaptation</li>
               <li  className={styles.info}>select multiple genres</li>
               <li  className={styles.info}>video in the movies card</li>
               <li  className={styles.info}>my CV by clicking on the logo</li>

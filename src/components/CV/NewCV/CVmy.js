@@ -10,15 +10,15 @@ import {
 import {Link} from "react-router-dom";
 
 
-export const SlideInLeft = styled.div`animation: 1s ${keyframes`${slideInLeft}`}`;
+export const SlideInLeft = styled.div`animation: 2s ${keyframes`${slideInLeft}`}`;
 export const SlideInDown = styled.div`animation: 3s backwards 1s ${keyframes`${slideInDown}`}`;
 export const Tada = styled.div`animation: 2s ${keyframes`${tada}`} infinite`;
 export const Pulse = styled.div`animation: 3s backwards 2s ${keyframes`${pulse}`}`;
-export const SlideInUp = styled.div`animation: 1s backwards ${keyframes`${slideInUp}`}`;
+export const SlideInUp = styled.div`animation: 2s backwards ${keyframes`${slideInUp}`}`;
 export const ZoomInDown = styled.div`animation: 3s backwards 1s ${keyframes`${zoomInDown}`}`;
 export const ZoomIn = styled.div`animation: 3s backwards 1s ${keyframes`${zoomIn}`}`;
 export const ZoomInC = styled.div`animation: 3s backwards 2s ${keyframes`${zoomIn}`}`;
-export const SlideInRight = styled.div`animation: 1s ${keyframes`${slideInRight}`}`;
+export const SlideInRight = styled.div`animation: 2s ${keyframes`${slideInRight}`}`;
 
 
 // export const Sound = () => {
