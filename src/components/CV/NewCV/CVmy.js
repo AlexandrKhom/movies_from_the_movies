@@ -39,7 +39,7 @@ export function CVmy() {
     return (
         <div className={styles.wrapper}>
             <SlideInLeft className={styles.bottom}>
-                <Link to="/" className={styles.back}>B</Link>
+                <Link to="/" className={styles.back}>H</Link>
                 <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
                     🔊
                     {/*<Sound/>*/}
@@ -53,7 +53,7 @@ export function CVmy() {
                             <Tada> FRONTEND DEVELOPER</Tada>
                         </div>
                         <div className={styles.foto}><Pulse>
-                            <img className={styles.img} src="./myfoto.jpg" alt="myPhoto"/>
+                            <img className={styles.img} src={"/myfoto.jpg"} alt="myPhoto"/>
                         </Pulse>
                         </div>
                     </div>

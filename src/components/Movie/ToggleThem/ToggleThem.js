@@ -28,7 +28,7 @@ export const ToggleThem = () => {
         {/*<img src={state ? './moon1.png' : './moon2.png'} alt="sun icon"/>*/}
         <img src={state ? './cloud.png' : './sun.png'} alt="sun icon"/>
         <Switch checked={state} onChange={changeTheme} name="toggle" color="secondary"/>
-        <img src={state ? './moon.png' : './cloud.png'} alt="sun icon"/>
+        <img src={state ? './moon.png' : './cloud.png'} alt="moon icon"/>
       </div>
   );
 }

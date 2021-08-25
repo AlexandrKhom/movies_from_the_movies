@@ -38,7 +38,7 @@ const Div = styled.div`
   }
 `;
 
-const RightNav = ({ open }) => {
+export const RightNav = ({ open }) => {
     return (
         <Ul open={open}>
             {/*<li>Home</li>*/}
@@ -51,4 +51,3 @@ const RightNav = ({ open }) => {
     )
 }
 
-export default RightNav

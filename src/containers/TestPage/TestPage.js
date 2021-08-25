@@ -17,7 +17,7 @@ export const TestPage = () => {
 
   return (
       <div className={`${styles.wrapper} ${success ? styles.green : styles.red}`}>
-          <Link to="/" className={styles.back}>B</Link>
+          <Link to="/" className={styles.back}>H</Link>
         { !start && <Preview setStart={setStart}/> }
         { start && <Timer setStart={setStart} success={success}/> }
 

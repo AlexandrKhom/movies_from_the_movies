@@ -117,10 +117,12 @@
 
 .back {
     position: fixed;
+    top: 5px;
+    left: 5px;
     text-decoration: none;
-    color: rgba(150, 121, 121, 0.73);
+    color: rgb(119, 115, 136);
     font-size: large;
-    border: rgba(150, 121, 121, 0.73) 1px solid;
+    border: rgb(119, 115, 136) 1px solid;
     border-radius: 22px;
     margin: 3px;
     padding: 1px;

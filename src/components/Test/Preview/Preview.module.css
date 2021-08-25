@@ -5,7 +5,12 @@
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    background-color: #fcd1d1;
+    /*background-color: #fcd1d1;*/
+    /*background-color: rgba(156, 180, 238, 0.91);*/
+
+    /*background-color: rgb(100, 165, 238);*/
+background-color: #a8c6ff;
+
 }
 
 .block {

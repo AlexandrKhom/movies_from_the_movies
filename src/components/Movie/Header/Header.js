@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 // import {SearchPanel} from "../SearchPanel";
 // import {GenresSelect} from "../GenresSelect";
 // import {ToggleThem} from "../ToggleThem";
-import {Navbar} from "../Mob/Navbar";
+import {Navbar} from "../Mobile/Navbar";
 
 
 

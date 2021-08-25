@@ -1,32 +1,42 @@
 .wrapper {
     margin: auto;
-    width: 1100px;
+    /*width: 1100px;*/
+    width: 85%;
+
+
     min-height: 100vh;
-    padding: 50px 100px;
+    padding: 50px 20px;
     border-left: 1px black solid;
     border-right: 1px black solid;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
     line-height: 1.5;
 }
+
 .wrapper > h1 {
     text-align: center;
-    text-shadow: 5px 6px 2px rgba(0,0,0,0.3);
+    text-shadow: 5px 6px 2px rgba(0, 0, 0, 0.3);
 }
 
-.back {
-    position: fixed;
-    text-decoration: none;
-    color: rgba(58, 55, 55, 0.68);
-    font-size: large;
-    border: #3a3737 1px solid;
-    border-radius: 22px;
-    margin: 3px;
-    padding: 1px;
-}
-.back:hover {
-    /*border: #3f3030 1px solid;*/
-    border: #2d494b 1px solid;
-    color: #2d494b;
+/*.back {*/
+/*    position: fixed;*/
+/*    text-decoration: none;*/
+/*    color: rgba(58, 55, 55, 0.68);*/
+/*    font-size: large;*/
+/*    border: #3a3737 1px solid;*/
+/*    border-radius: 22px;*/
+/*    margin: 3px;*/
+/*    padding: 1px;*/
+/*}*/
+/*.back:hover {*/
+/*    !*border: #3f3030 1px solid;*!*/
+/*    border: #2d494b 1px solid;*/
+/*    color: #2d494b;*/
+/*}*/
+
+hr {
+    border-bottom: 0;
+    border-right: 0;
+    background-color: #373752;
 }
 
 .linkToGitHub {
@@ -36,6 +46,7 @@
     font-size: 25px;
     margin-top: 40px;
 }
+
 .m40 {
     margin-top: 40px;
 }
@@ -44,8 +55,13 @@
 .green {
     background-color: rgb(228, 252, 228);
 }
+
 .red {
-    background-color: #fcd1d1;
+    /*background-color: #fcd1d1;*/
+    /*background-color: rgba(156, 180, 238, 0.91);*/
+
+    background-color: rgba(183, 198, 245, 0.91);
+
 }
 
 .qsize {
@@ -64,4 +80,19 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+@media (max-width: 768px) {
+
+    .MuiOutlinedInput-root {
+        width: 90%;
+    }
+
+    .MuiButton-outlinedPrimary {
+        width: 90%;
+    }
+
+    hr {
+        width: 90%;
+    }
 }

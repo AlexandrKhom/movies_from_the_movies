@@ -12,8 +12,8 @@ export const UserInfo = () => {
           <Link to="/myCV" className={styles.img}>
           {
             theme
-                ? <img src="./user1.png" alt="icon"/>
-                : <img src="./user2.png" alt="icon"/>
+                ? <img src={"./user1.png"} alt="icon"/>
+                : <img src={"./user2.png"} alt="icon"/>
           }
         </Link>
       </div>

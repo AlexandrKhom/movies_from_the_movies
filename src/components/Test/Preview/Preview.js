@@ -10,7 +10,7 @@ export const Preview = ({ setStart }) => {
               source code моего проекта,
               необходимо пройти небольшое тестирование. <br/>
               Это займёт не более 2-х минут.</h2>
-          <Button onClick={() => setStart(true)} variant="outlined" color="secondary">Start</Button>
+          <Button onClick={() => setStart(true)} variant="outlined" color="primary">Start</Button>
         </div>
       </div>
   );
