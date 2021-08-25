@@ -6,7 +6,9 @@
     width: 100%;
     height: 100%;
     z-index: 5;
-    background-color: rgba(229, 15, 15, 0.3);
+    /*background-color: rgba(229, 15, 15, 0.3);*/
+    background-color: rgba(71, 157, 253, 0.2);
+
     backdrop-filter: blur(10px);
 }
 
@@ -15,7 +17,7 @@
     min-height: 200px;
     min-width: 600px;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(200, 157, 250, 0.78);
     padding: 30px 50px;
 }
 
@@ -34,11 +36,13 @@
     margin-top: 15px;
     padding: 7px 15px;
     border-radius: 8px;
+    border: #7f8ace 2px solid;
+    background-color: rgba(214, 173, 246, 0.8);
 }
 
 .close:hover {
     cursor: pointer;
-    background-color: #cecece;
+    background-color: #7f8ace;
 }
 
 .close:active {

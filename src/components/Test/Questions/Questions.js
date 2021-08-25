@@ -54,14 +54,7 @@ export const Questions = ({setSuccess, success}) => {
 
     useEffect(() => {
         submit();
-    }, [formState, submit]);
-
-    useEffect(() => {
-        return () => {
-            setFormState(initialState)
-            setValid(false)
-        }
-    }, []);
+    }, [formState]);
 
     return (
         <div className={`${styles.wrapper} ${styles.notForCopy} ${success ? styles.green : styles.red}`}>
@@ -236,7 +229,6 @@ export const Questions = ({setSuccess, success}) => {
                                variant="outlined"/>
                     <br/>
                     <br/>
-
                     <br/>
                     {valid &&
                     <Button onClick={() => setSuccess(true)} variant="outlined" color="primary">Submit</Button>}

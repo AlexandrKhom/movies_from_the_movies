@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-
 import styles from './UserInfo.module.css';
 
 export const UserInfo = () => {
@@ -12,8 +11,8 @@ export const UserInfo = () => {
           <Link to="/myCV" className={styles.img}>
           {
             theme
-                ? <img src={"./user1.png"} alt="icon"/>
-                : <img src={"./user2.png"} alt="icon"/>
+                ? <img src={"/user1.png"} alt="icon"/>
+                : <img src={"/user2.png"} alt="icon"/>
           }
         </Link>
       </div>

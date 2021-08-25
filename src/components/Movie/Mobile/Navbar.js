@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {Burger} from './Burger';
 
-
 const Nav = styled.nav`
-  padding: 0 20px;
+  padding: 0 5px;
   display: flex;
   justify-content: space-between;
   .logo {
@@ -13,7 +12,6 @@ const Nav = styled.nav`
 `
 
 export const Navbar = () => {
-
 
     return (
         <Nav>

@@ -20,7 +20,7 @@ export const Pagination = () => {
 
   return (
       <div className={styles.wrapper}>
-        <div>
+        <div className={styles.nav}>
           <button
               className={`${activeBtnTheme} ${page <= 1 ? theme ? styles.disableDark : styles.disableWhite : ''}`}
               disabled={page <= 1}

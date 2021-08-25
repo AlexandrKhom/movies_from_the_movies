@@ -23,9 +23,7 @@ export const MoviesListCard = ({ item }) => {
         </div>
         <div className={`${styles.info} ${theme ? styles.dark : ''}`}>
           <h3 className={theme ? styles.darkSpan : ''}>{original_title}</h3>
-
           <GenreBadge genre_ids={genre_ids}/>
-
           <span><b className={theme ? styles.darkSpan : ''}>Rating:</b> {vote_average} (total votes: {vote_count})</span>
           <p className={styles.overview}>{overview}</p>
           <span><b className={theme ? styles.darkSpan : ''}>Release date:</b> {release_date}</span>

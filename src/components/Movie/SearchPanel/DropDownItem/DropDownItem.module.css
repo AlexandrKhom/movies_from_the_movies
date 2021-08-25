@@ -18,6 +18,7 @@
 .dark {
     color: #81c1f3;
 }
+
 .dark:hover {
     background-color: rgba(71, 71, 71, 0.4);
     border: 1px solid #474747;

@@ -5,15 +5,11 @@
 .green {
     background-color: rgba(108, 248, 108, 0.71);
 }
+
 .red {
-    /*background-color: #e5aaaa;*/
-
-    /*background-color: #2565e1;*/
-background-color: #3f51b5;
-/*background-color: #4d5fc7;*/
-
-
+    background-color: #3f51b5;
 }
+
 .back {
     position: fixed;
     left: 2px;
@@ -26,8 +22,8 @@ background-color: #3f51b5;
     margin: 3px;
     padding: 1px;
 }
+
 .back:hover {
-    /*border: #3f3030 1px solid;*/
     border: rgb(6, 15, 26) 1px solid;
     color: rgb(6, 15, 26);
 }

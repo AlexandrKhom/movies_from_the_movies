@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import queryString from "query-string";
-
 import styles from "./SearchPanel.module.css";
 import { DropDown } from "./DropDown";
 import { getMoviesBySearchValue } from "../../../services";
@@ -11,7 +10,6 @@ export const SearchPanel = () => {
   const location = useLocation();
   const history = useHistory();
   const { theme } = useSelector(({theme}) => theme);
-
   const [searchValue, setSearchValue] = useState('');
   const [dropDownIsVisible, setDropDownIsVisible] = useState(true);
   const [searchItems, setSearchItems] = useState([]);
@@ -36,7 +34,6 @@ export const SearchPanel = () => {
 
   const getMoviesFromDB = async (e) => {
     e.preventDefault();
-
     const query = queryString.parse(location.search);
     query.query = searchValue;
     query.page = '1';
@@ -56,7 +53,6 @@ export const SearchPanel = () => {
                  placeholder={'search...'}
                  className={`${styles.searchInput} ${theme ? styles.dark : styles.white}`}/>
         </form>
-
         {
           dropDownIsVisible && searchValue && <DropDown searchItems={searchItems} loading={loading} setSearchValue={setSearchValue}/>
         }

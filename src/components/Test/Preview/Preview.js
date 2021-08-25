@@ -1,5 +1,4 @@
 import { Button } from "@material-ui/core";
-
 import styles from './Preview.module.css';
 
 export const Preview = ({ setStart }) => {

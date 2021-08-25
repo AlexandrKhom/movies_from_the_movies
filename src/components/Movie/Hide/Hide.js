@@ -4,7 +4,7 @@ import styles from './Hide.module.css'
 export const Hide = () => {
   const [hide, setHide] = useState(true);
 
-  const clickFu = () => {
+  const clickClose = () => {
     setHide(false);
     localStorage.setItem('modalState', JSON.stringify(false));
   }
@@ -25,15 +25,15 @@ export const Hide = () => {
         {hide &&
         <div className={styles.wrapper}>
           <div className={styles.first}>
-            <h2 className={styles.second}>Last update</h2>
+            <h2 className={styles.second}>Last update (v2.0)</h2>
             <br/>
             <h3>Added features:</h3>
             <ul>
               <li  className={styles.info}>smart search</li>
-              <li  className={styles.info}>сhange the theme</li>
+              <li  className={styles.info}>change the theme</li>
               <li  className={styles.info}>mobile adaptation</li>
               <li  className={styles.info}>select multiple genres</li>
-              <li  className={styles.info}>video in the movies card</li>
+              <li  className={styles.info}>video on the movies card</li>
               <li  className={styles.info}>my CV by clicking on the logo</li>
             </ul>
             <br/>
@@ -47,7 +47,7 @@ export const Hide = () => {
             <br/>
 
             <div className={styles.btnWrapper}>
-              <button className={styles.close} onClick={clickFu}>close info</button>
+              <button className={styles.close} onClick={clickClose}>close info</button>
             </div>
           </div>
         </div>

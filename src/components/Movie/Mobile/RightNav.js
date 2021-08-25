@@ -41,7 +41,6 @@ const Div = styled.div`
 export const RightNav = ({ open }) => {
     return (
         <Ul open={open}>
-            {/*<li>Home</li>*/}
             <Div><div> </div></Div>
             <li><SearchPanel/></li>
             <li><GenresSelect/></li>

@@ -21,18 +21,8 @@ export const ZoomInC = styled.div`animation: 3s backwards 2s ${keyframes`${zoomI
 export const SlideInRight = styled.div`animation: 2s ${keyframes`${slideInRight}`}`;
 
 
-// export const Sound = () => {
-//     const [play] = useSound(boom);
-//
-//     return (
-//         <button style={{background: '#2e2c33'}} onClick={play}>
-//             🔊
-//         </button>
-//     );
-// };
-
-
 export function CVmy() {
+
     const [play, {stop}] = useSound(phone);
 
 
@@ -40,14 +30,12 @@ export function CVmy() {
         <div className={styles.wrapper}>
             <SlideInLeft className={styles.bottom}>
                 <Link to="/" className={styles.back}>H</Link>
-                <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
+                <div onMouseEnter={() => {play()}} onMouseLeave={() => {stop()}}>
                     🔊
-                    {/*<Sound/>*/}
                 </div>
             </SlideInLeft>
             <div className={styles.main}>
-                <SlideInDown>
-                    <div className={styles.header}>
+                <SlideInDown className={styles.header}>
                         <div className={styles.about}>KHOMENKO <br/> ALEXANDR <br/> VLADIMIROVICH <br/>
                             <hr/>
                             <Tada> FRONTEND DEVELOPER</Tada>
@@ -56,18 +44,14 @@ export function CVmy() {
                             <img className={styles.img} src={"/myfoto.jpg"} alt="myPhoto"/>
                         </Pulse>
                         </div>
-                    </div>
                 </SlideInDown>
-                <SlideInUp>
-                    <div className={styles.menu}>
-                        <ZoomIn>
-                            <div className={styles.category}>
+                <SlideInUp  className={styles.menu}>
+                        <ZoomIn className={styles.category}>
                                 <ZoomInDown>
                                     <h2>CONTACTS</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomInC>
-                                        <div className={styles.category2}>
+                                    <ZoomInC className={styles.category2}>
                                             <div className={styles.name}>
                                                 <div>E-mail:</div>
                                                 <div>Phone:</div>
@@ -95,19 +79,15 @@ export function CVmy() {
                                                     github.com/AlexandrKhom</a>
                                                 </div>
                                             </div>
-                                        </div>
                                     </ZoomInC>
                                 </ZoomInDown>
-                            </div>
                         </ZoomIn>
-                        <ZoomIn>
-                            <div className={styles.category}>
+                        <ZoomIn className={styles.category}>
                                 <ZoomInDown>
                                     <h2>TECHNICAL SKILLS</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomInC>
-                                        <div className={styles.category2}>
+                                    <ZoomInC className={styles.category2}>
                                             <div className={styles.name}>
                                                 <div>JavaScript</div>
                                                 <div>React</div>
@@ -124,38 +104,31 @@ export function CVmy() {
                                                 <div>🟣🟣⚫⚫⚫</div>
                                                 <div>🟣🟣⚫⚫⚫</div>
                                             </div>
-                                        </div>
                                     </ZoomInC>
                                 </ZoomInDown>
-                            </div>
                         </ZoomIn>
-                        <ZoomIn>
-                            <div className={styles.category}>
+                        <ZoomIn className={styles.category}>
                                 <ZoomInDown>
                                     <h2>EDUCATION</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomIn>
-                                        <div className={styles.category2}>
-                                            <div><b>JavaScript Complex</b>
+                                    <ZoomInC>
+                                                <b>JavaScript Complex</b>
                                                 <p>Okt 2020 - Present</p>
-                                                <p>OktenWeb University</p></div>
-                                            <div style={{paddingRight: '15px'}}><b>Medical Psychology</b>
+                                                <p>OktenWeb University</p>
+
+                                                <b>Medical Psychology</b>
                                                 <p>Sep 2003 – May 2010</p>
-                                                <p>BOGOMOLETS NMU</p></div>
-                                        </div>
-                                    </ZoomIn>
+                                                <p>BOGOMOLETS NMU</p>
+                                    </ZoomInC>
                                 </ZoomInDown>
-                            </div>
                         </ZoomIn>
-                        <ZoomIn>
-                            <div className={styles.category}>
+                        <ZoomIn className={styles.category}>
                                 <ZoomInDown>
                                     <h2>LANGUAGES</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomInC>
-                                        <div className={styles.category2}>
+                                    <ZoomInC className={styles.category2}>
                                             <div className={styles.name}>
                                                 <div>Ukrainian</div>
                                                 <div>Russian</div>
@@ -168,63 +141,51 @@ export function CVmy() {
                                                 <div>🟣🟣⚫⚫⚫</div>
                                                 <div>🟣⚫⚫⚫⚫</div>
                                             </div>
-                                        </div>
                                     </ZoomInC>
                                 </ZoomInDown>
-                            </div>
                         </ZoomIn>
-                        <ZoomIn>
-                            <div className={styles.category}>
+                        <ZoomIn  className={styles.category}>
                                 <ZoomInDown>
                                     <h2>WORK EXPERIENCE</h2>
                                     <hr/>
                                     <br/>
                                     <ZoomInC>
-                                        <div style={{lineHeight: 1.3}}>
                                             <b>Head of development department</b>
                                             <p>May 2018 - Sep 2021</p>
                                             <p>"Alfa Global"</p>
                                             <b>Account Manager</b>
                                             <p>Aug 2015 - May 2018</p>
                                             <p>"Hasky outsourcing"</p>
-                                        </div>
                                     </ZoomInC>
                                 </ZoomInDown>
-                            </div>
                         </ZoomIn>
-                        <ZoomIn>
-                            <div className={styles.category}>
+                        <ZoomIn className={styles.category}>
                                 <ZoomInDown>
                                     <h2>PET PROJECTS</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomInC>
-                                        <div>
-                                            <a className={styles.refer2}
+                                    <ZoomInC className={styles.refer2}>
+                                            <a
                                                target="_blank"
                                                href="https://max2020khom.github.io"
                                                rel="noreferrer">
                                                 https://alexandrkhom.github.io/movie</a>
                                             <br/>
                                             <br/>
-                                            <a className={styles.refer2}
+                                            <a
                                                target="_blank"
                                                href="https://alexkyiv1990.github.io"
                                                rel="noreferrer">
                                                 https://alexandrkhom.github.io/calculator</a>
                                             <br/>
-                                        </div>
                                     </ZoomInC>
                                 </ZoomInDown>
-                            </div>
                         </ZoomIn>
-                    </div>
                 </SlideInUp>
             </div>
             <SlideInRight className={styles.bottom}>
                 <div onMouseEnter={() => play()} onMouseLeave={() => stop()}>
                     🔊
-                    {/*<Sound/>*/}
                 </div>
             </SlideInRight>
         </div>
