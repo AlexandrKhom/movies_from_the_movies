@@ -104,6 +104,11 @@
     align-content: center;
 }
 
+.category3 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
 .name {
     display: grid;
     justify-items: start;
@@ -163,6 +168,9 @@
     .category {
         min-height: auto;
     }
+    .category3 {
+        font-size: 11px;
+    }
     .name {
         font-size: 12px;
         padding-left: 5px;
@@ -178,6 +186,6 @@
         font-size: 13px;
     }
     .refer2 {
-        font-size: 14px;
+        font-size: 13px;
     }
 }

@@ -112,7 +112,7 @@ export function CVmy() {
                                     <h2>EDUCATION</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomInC>
+                                    <ZoomInC className={styles.category3}>
                                                 <b>JavaScript Complex</b>
                                                 <p>Okt 2020 - Present</p>
                                                 <p>OktenWeb University</p>
@@ -149,10 +149,11 @@ export function CVmy() {
                                     <h2>WORK EXPERIENCE</h2>
                                     <hr/>
                                     <br/>
-                                    <ZoomInC>
+                                    <ZoomInC className={styles.category3}>
                                             <b>Head of development department</b>
                                             <p>May 2018 - Sep 2021</p>
                                             <p>"Alfa Global"</p>
+
                                             <b>Account Manager</b>
                                             <p>Aug 2015 - May 2018</p>
                                             <p>"Hasky outsourcing"</p>
@@ -169,14 +170,14 @@ export function CVmy() {
                                                target="_blank"
                                                href="https://max2020khom.github.io"
                                                rel="noreferrer">
-                                                https://alexandrkhom.github.io/movie</a>
+                                                alexandrkhom.github.io/movie</a>
                                             <br/>
                                             <br/>
                                             <a
                                                target="_blank"
                                                href="https://alexkyiv1990.github.io"
                                                rel="noreferrer">
-                                                https://alexandrkhom.github.io/calculator</a>
+                                                alexandrkhom.github.io/calculator</a>
                                             <br/>
                                     </ZoomInC>
                                 </ZoomInDown>

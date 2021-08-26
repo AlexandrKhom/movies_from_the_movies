@@ -1,6 +1,7 @@
 .wrapper {
     display: flex;
     flex-direction: column;
+    min-height: 90vh;
 }
 
 .wrapperList {
@@ -16,5 +17,4 @@
     .wrapperList {
         padding: 10px 10px;
     }
-
 }
