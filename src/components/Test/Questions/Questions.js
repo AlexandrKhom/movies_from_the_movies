@@ -239,8 +239,15 @@ export const Questions = ({setSuccess, success}) => {
             </div>
             <div className={styles.linkToGitHub}>
                 {success &&
-                <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies"><i>Show
-                    source code my project</i></a>}
+
+                <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies">
+                    <button>
+                    <b>Show source code
+                        {/*my project*/}
+                    </b>
+                    </button>
+                    </a>}
+
             </div>
         </div>
     );

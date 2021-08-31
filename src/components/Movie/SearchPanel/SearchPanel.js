@@ -17,6 +17,7 @@ export const SearchPanel = () => {
 
   const typeSearchValue = async ({ currentTarget: { value } }) => {
     setSearchValue(value);
+    setDropDownIsVisible(true);
 
     if (value) {
       try {

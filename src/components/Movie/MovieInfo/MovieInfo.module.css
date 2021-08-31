@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     margin: auto;
-    min-height: 900px;
 }
 
 iframe {
@@ -12,7 +11,7 @@ iframe {
     max-height: max-content;
     border: 1px solid black;
     margin-top: 20px;
-    margin-right: 7px;
+    margin-right: 4px;
 }
 
 .wrapperVote {
@@ -23,9 +22,8 @@ iframe {
 }
 
 .wrapperImg {
-    margin-top: 20px;
     min-width: 70px;
-    margin-left: 1%;
+    margin: 1%;
 }
 
 .vote {
@@ -58,7 +56,6 @@ iframe {
 
 .wrapperInfo {
     flex: 1;
-    margin: 5%;
     line-height: 1.6;
 }
 .filmTitle{

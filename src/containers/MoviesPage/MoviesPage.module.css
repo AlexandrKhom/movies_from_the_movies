@@ -1,17 +1,10 @@
 .movies_page {
     min-width: 620px;
     width: 100%;
-    /*padding-top: 20px;*/
-
-    padding-top: 7%;
-    padding-bottom: 3%;
-
+    padding-top: 12vh;
+    padding-bottom: 2%;
     min-height: 95vh;
-
-    /*height: 100vh;*/
     background-color: #aeb6e3;
-    /*overflow-y: auto;*/
-
 }
 
 .white {
@@ -26,7 +19,7 @@
 @media (max-width: 768px) {
     .movies_page {
         min-width: 100%;
-        padding-top: 14%;
+        padding-top: 7vh;
         display: flex;
         flex-direction: column;
         align-items: center;

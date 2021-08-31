@@ -168,7 +168,7 @@ export function CVmy() {
                                     <ZoomInC className={styles.refer2}>
                                             <a
                                                target="_blank"
-                                               href="https://max2020khom.github.io"
+                                               href="https://alexandrkhom.github.io"
                                                rel="noreferrer">
                                                 alexandrkhom.github.io/movie</a>
                                             <br/>

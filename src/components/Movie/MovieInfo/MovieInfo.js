@@ -54,7 +54,6 @@ export const MovieInfo = () => {
             </div>
           </div>
         </div>
-
         <div className={styles.wrapperInfo}>
           <h1 className={styles.filmTitle}>{filmDetails.original_title}</h1>
           <p>

@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 6vh;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: space-between;
     align-items: center;
     column-gap: 10px;
