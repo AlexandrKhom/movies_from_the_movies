@@ -224,11 +224,20 @@ export const Questions = ({setSuccess, success}) => {
                     <hr/>
                     <br/>
                     <div className={styles.qsize}>6️⃣ Чему равно 2 && 1 && 0 && null && undefined && 5 ?</div>
-                    <br/>
+                    {/*<br/>*/}
                     <TextField onChange={handleChange} value={formState.input2} name="input2" label="Outlined"
                                variant="outlined"/>
-                    <br/>
-                    <br/>
+                    {/*<br/>*/}
+                    <div className={styles.linkToGitHub}>
+                        {success &&
+                        <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies">
+                            <button className={styles.referbtn}>
+                                <b>Show source code
+                                    {/*my project*/}
+                                </b>
+                            </button>
+                        </a>}
+                    </div>
                     <br/>
                     {valid &&
                     <Button onClick={() => setSuccess(true)} variant="outlined" color="primary">Submit</Button>}
@@ -237,18 +246,7 @@ export const Questions = ({setSuccess, success}) => {
                                        variant="outlined" color="primary">Submit</Button>}
                 </FormControl>
             </div>
-            <div className={styles.linkToGitHub}>
-                {success &&
 
-                <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies">
-                    <button>
-                    <b>Show source code
-                        {/*my project*/}
-                    </b>
-                    </button>
-                    </a>}
-
-            </div>
         </div>
     );
 }

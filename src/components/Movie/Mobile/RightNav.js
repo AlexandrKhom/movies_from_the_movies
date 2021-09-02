@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import {SearchPanel} from "../SearchPanel";
 import {GenresSelect} from "../GenresSelect";
 import {UserInfo} from "../UserInfo";
 import {ToggleThem} from "../ToggleThem";
@@ -21,9 +20,9 @@ const Ul = styled.ul`
     transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
     top: 0;
     right: 0;
-    height: 300px;
+    height: 220px;
     border-bottom-left-radius: 44px;
-    width: 300px;
+    width: 230px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     li {
@@ -42,7 +41,7 @@ export const RightNav = ({ open }) => {
     return (
         <Ul open={open}>
             <Div><div> </div></Div>
-            <li><SearchPanel/></li>
+            {/*<li><SearchPanel/></li>*/}
             <li><GenresSelect/></li>
             <li><UserInfo/></li>
             <li><ToggleThem/></li>
