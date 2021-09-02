@@ -224,28 +224,30 @@ export const Questions = ({setSuccess, success}) => {
                     <hr/>
                     <br/>
                     <div className={styles.qsize}>6️⃣ Чему равно 2 && 1 && 0 && null && undefined && 5 ?</div>
-                    {/*<br/>*/}
+                    <br/>
                     <TextField onChange={handleChange} value={formState.input2} name="input2" label="Outlined"
                                variant="outlined"/>
-                    {/*<br/>*/}
+                    <br/>
 
                     {valid && !success &&
                     <Button onClick={() => setSuccess(true)} variant="outlined" color="primary">Submit</Button>}
                     {!valid && <Button target='_blank'
                                        href="https://www.google.com/search?q=%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B+javascript&rlz=1C1SQJL_ruUA851UA851&sxsrf=ALeKk03dn88XtkLulqURBWfVLGWTIOrIcw%3A1628792767082&ei=v2cVYbeoBO_97_UPy66d0AU&oq=jcyj+javascript&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQDTIECAAQDTIECAAQDTIECAAQDTIGCAAQDRAeMggIABANEAUQHjIICAAQCBANEB4yCAgAEAgQDRAeMggIABAIEA0QHjIICAAQCBANEB46BwgjELADECc6BwgAEEcQsAM6BAgjECc6BAgAEEM6BggAEAcQHkoECEEYAFCxDViSIWCWNWgBcAJ4AIABuQGIAYEGkgEDMy4zmAEAoAEByAEKwAEB&sclient=gws-wiz"
                                        variant="outlined" color="primary">Submit</Button>}
+                    <div className={styles.linkToGitHub}>
+                        {success &&
+                        <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies">
+                            <button className={styles.referbtn}>
+                                <b>Show source code
+                                    {/*my project*/}
+                                </b>
+                            </button>
+                        </a>}
+                    </div>
                 </FormControl>
+
             </div>
-            <div className={styles.linkToGitHub}>
-                {success &&
-                <a target='_blank' rel="noreferrer" href="https://github.com/AlexandrKhom/movies_from_the_movies">
-                    <button className={styles.referbtn}>
-                        <b>Show source code
-                            {/*my project*/}
-                        </b>
-                    </button>
-                </a>}
-            </div>
+
 
         </div>
     );
