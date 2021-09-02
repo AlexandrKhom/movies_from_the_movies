@@ -24,7 +24,7 @@ hr {
     border: black 1px solid;
     border-radius: 25px;
     padding: 7px;
-    background-color: rgb(248, 238, 242);
+    background-color: rgb(243, 238, 225);
 }
 .referbtn:hover {
     cursor: pointer;
