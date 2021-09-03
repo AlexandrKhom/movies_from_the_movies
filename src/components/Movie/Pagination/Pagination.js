@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import queryString from "query-string";
 
 import styles from './Pagination.module.css';
+import {ScrollToTopOnMount} from "../../CV/ScrollToTopOnMount/ScrollToTopOnMount";
 
 export const Pagination = () => {
   const { page, total_pages, theme } = useSelector(({ movies, theme }) => ({ ...movies, ...theme }));
@@ -20,6 +21,7 @@ export const Pagination = () => {
 
   return (
       <div className={styles.wrapper}>
+        {/*<ScrollToTopOnMount/>*/}
         <div className={styles.nav}>
           <button
               className={`${activeBtnTheme} ${page <= 1 ? theme ? styles.disableDark : styles.disableWhite : ''}`}
